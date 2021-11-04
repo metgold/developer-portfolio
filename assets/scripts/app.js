@@ -57,7 +57,7 @@ const Portfolio = function() {
 	function typeAnimation() {
 		Typed.new("#writing-text", {
 			strings: [
-				"am a Full-Stack Web Developer.", "love everything about code.", "also teach programming to people.", "solve problems."
+				"am a Full-Stack Web Developer.", "love everything about code.", "also teach programming to people.", "am a passionate software developer ."
 			],
 			// Optionally use an HTML element to grab strings from (must wrap each string in a <p>)
 			stringsElement: null,
@@ -65,13 +65,18 @@ const Portfolio = function() {
 			typeSpeed: 1,
 			contentType: 'text',
 			callback: function() {
-				$("#writing-text").css({"color": "#fff", "background-color": "#C8412B"});
+				$("#writing-text").css({"color": "#fff", "background-color": "#4b5186", "animation-name":" color",
+				"animation-duration": "5s",
+			  "animation-fill-mode": "forwards",
+			  "animation-iteration-count": "infinite"} );
 			},
 			preStringTyped: function() {},
 			onStringTyped: function() {}
 		});
 	}
 
+	
+	  
 	return {
 		displayWordCloud: displayWordCloud,
 		typeAnimation: typeAnimation

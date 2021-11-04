@@ -1,9 +1,25 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,300,300i,400,700');
 
+
 /*********** Global Styles********/
 
 body, html {
-		background-color: #E3E3E3;
+		background-color: #4c6d86;
+		animation-name: colorful-0;
+  		animation-duration: 3s;
+		animation-fill-mode: forwards;
+		animation-iteration-count: infinite;
+}
+@keyframes colorful-0 {
+	0% {
+		background-color: #4c6d86;
+	}
+	50% {
+		background-color: #50565a;
+	}
+	100% {
+		background-color: #4b5186;
+	}
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -12,8 +28,64 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .wrapper {
-		background: #E3E3E3;
+		background: #4c6d86;
+		animation-name: colorful-1;
+  		animation-duration: 3s;
+		animation-fill-mode: forwards;
+		animation-iteration-count: infinite;
 }
+@keyframes colorful-1 {
+	0% {
+		background-color: #4c6d86;
+	}
+	50% {
+		background-color: #50565a;
+	}
+	100% {
+		background-color: #4b5186;
+	}
+}
+
+#ball {
+    width: 300px;
+    height: 120px;
+    margin: 50px auto;
+	padding: 25px;
+	text-transform: capitalize;
+	text-align: center;
+	color:#fff;
+	font-family: 'Fruktur', cursive !important;
+	font-size: 30px;
+    position: relative;
+    border-radius: 50%;
+    /* background: linear-gradient(
+      35deg,
+      #884035,
+      #cc4b37
+    ); */
+    animation-name: bounce;
+    animation-duration: 5s;
+    animation-iteration-count: 3;
+  }
+
+  @keyframes bounce{
+    0% {
+      left : 0px;
+	  background-color: #4c6d86;
+	  font-size: 10px;
+    }
+    50% {
+      left: 249px;
+      width: 200px;
+      height: 70px;
+	  background-color: #50565a;
+	  font-size: 15px;
+    }
+    100% {
+      right: 0px;
+	  background-color: #4b5186;
+    }
+  }
 
 .img-circle {
 		border-radius: 50%;
@@ -113,14 +185,14 @@ h1, h2, h3, h4, h5, h6 {
 .cta .cta-button {
 		color: #cc4b37;
 		text-transform: uppercase;
-		border: 2px solid rgba(255, 103, 68, 0.91);
+		border: 2px solid #646464;
 		border-radius: 50px;
 		background: white;
 }
 
 .cta .cta-button:hover, .cta .cta-button:focus {
 		box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 14px 1px rgba(0, 0, 0, 0.15);
-		background-color: rgba(255, 103, 68, 0.91);
+		background-color: #646464;
 		color: white;
 }
 
@@ -142,6 +214,21 @@ h1, h2, h3, h4, h5, h6 {
 #experience {
 	background-color: #4c6d86;
 	padding: 6em 4em 5.6em;
+	animation-name: colorful;
+  	animation-duration: 3s;
+	animation-fill-mode: forwards;
+	animation-iteration-count: infinite;
+}
+@keyframes colorful {
+	0% {
+		background-color: #4c6d86;
+	}
+	50% {
+		background-color: #50565a;
+	}
+	100% {
+		background-color: #4b5186;
+	}
 }
 
 #experience h2 {
@@ -183,7 +270,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #work h2 {
-	color: #FF6945;
+	color: #646464;
 	margin-bottom: .7em;
 }
 
@@ -227,13 +314,13 @@ h1, h2, h3, h4, h5, h6 {
 
 .details a, .details a:link, .details a:active{
 		color: rgba(255, 103, 68, 0.91);
-		border: 2px solid rgba(255, 103, 68, 0.91) !important;
+		border: 2px solid #646464 !important;
 		background-color: #fff;
 }
 
 .details a:hover, .details a:focus {
 		/*box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 14px 1px rgba(0, 0, 0, 0.15);*/
-		background-color: rgba(255, 103, 68, 0.91) !important;
+		background-color: #646464 !important;
 		color: #fff;
 }
 
@@ -279,9 +366,26 @@ h1, h2, h3, h4, h5, h6 {
 
 /*** Footer Call-to-action ***/
 #footer-cta {
-	background-color: rgba(255, 103, 68, 0.91);
+	background-color: rgba(223, 136, 116, 0.91);
 	padding: 6em 4em 5.6em;
+	animation-name: colorful-;
+  	animation-duration: 5s;
+	animation-fill-mode: forwards;
+	animation-iteration-count: infinite;
 }
+
+@keyframes colorful- {
+	0% {
+		background-color: rgba(223, 136, 116, 0.91);
+	}
+	50% {
+		background-color: rgba(158, 70, 50, 0.91);
+	}
+	100% {
+		background-color: rgba(80, 53, 47, 0.91);
+	}
+}
+
 
 #footer-cta h2 {
 	color: white;
@@ -306,7 +410,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #footer-cta a:hover {
 	background: #fff;
-	color: rgba(255, 103, 68, 0.91);
+	color: #4c6d86;
 	box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 14px 1px rgba(0, 0, 0, 0.15);
 }
 
